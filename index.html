@@ -1,0 +1,60 @@
+<!-- Menu to toggle html element when window is reduced-->
+  <div id="contactMenu" class="menu hidden">
+    <h3>Contact Menu</h3>
+    <ul>
+      <li id="add">Add Contact</li>
+      <li id="details">Contact Details</li>
+      <li id="list">My Contacts</li>
+    </ul>
+  </div>
+
+  <div class="no-menu">
+    <div class="row">
+      <button id="toggle" class="sr hidden">
+      </button>
+      <span class="header-right">
+        <img class="block" src="https://www.dropbox.com/s/zl8zm0srviwt1zv/address-book.png?raw=1">
+        <h3 class="block">ADDRESS BOOK MANAGER</h3>
+      </span>
+    </div>
+    <div class="flex-container">
+      <div id="savedContacts" class="container block">
+        <ul id="contactList" class="contact-list">
+          <li>
+            <a>EMPTY CONTACT LIST<a/>
+            <br>
+            <i class="email">...empty</i>
+        </li>
+        <li>
+          <a>Please add one</a>
+            <br>
+            <i class="email">name and email fields cannot be empty</i>
+          </li>
+        </ul>
+      </div>
+      <div id="contactDetails" class="contact-details container block">
+        <h3>Contact Details</h3>
+        <br>
+        <p><span><i>Name:</i>N/A</span>
+        </p>
+        <p><span><i>Email:</i>N/A</span></p>
+        <p><span><i>Home Address:</i>N/A</span></p>
+        <p><span><i>Office Address:</i>N/A</span></p>
+        <p><span><i>Organization:</i>N/A</span></p>
+        <p><span><i>Mobile Number:</i>N/A</span></p>
+        <p><span><i>Official Number:</i>N/A</span></p>
+        <p><span><i>Facebook:</i>N/A </span></p>
+      </div>
+      <form id="contactForm" class="user-form container block" onsubmit="(e) => onsubmit(e)">
+        <input type="text" placeholder="Name" name="name" onchange="(e) => onchange(e)">
+        <input type="email" placeholder="Email" name="email" onchange="(e) => onchange(e)">
+        <input type="text" placeholder="Home Address" name="homeAddress" onchange="(e) => onchange(e)">
+        <input type="text" placeholder="Office Address" name="officeAddress" onchange="(e) => onchange(e)">
+        <input type="text" placeholder="Organization" name="organization" onchange="(e) => onchange(e)">
+        <input type="tel" placeholder="Mobile Number" name="mobileNumber" onchange="(e) => onchange(e)">
+        <input type="tel" placeholder="Official Number" name="officialNumber" onchange="(e) => onchange(e)">
+        <input type="text" placeholder="Facebook Contact" name="facebookContact" onchange="(e) => onchange(e)">
+        <input id="create-contact" type="submit" value="SAVE CONTACT" name="createContact">
+      </form>
+    </div>
+  </div>
