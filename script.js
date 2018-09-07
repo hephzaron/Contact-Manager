@@ -27,6 +27,9 @@
   const details = document.getElementById("details");
   const list = document.getElementById("list");
 
+
+  const contactMenuClass = contactMenu.classList
+
   /**
    * onchange event for new contact form
    * @param { object } event 
@@ -59,7 +62,6 @@
    */
   toggle.addEventListener("click", function(event) {
     event.preventDefault();
-    const contactMenuClass = contactMenu.classList
     const isHidden = contactMenuClass.contains("hidden");
     if (isHidden) {
       contactMenuClass.remove("hidden");
@@ -84,6 +86,7 @@
     savedContacts.classList.add("hidden");
     contactDetails.classList.add("hidden");
     contactForm.classList.remove("hidden");
+    contactMenuClass.add("hidden");
   });
 
   /**
@@ -97,6 +100,7 @@
     savedContacts.classList.add("hidden");
     contactDetails.classList.remove("hidden");
     contactForm.classList.add("hidden");
+    contactMenuClass.add("hidden");
   });
 
   /**
@@ -110,6 +114,7 @@
     savedContacts.classList.remove("hidden");
     contactDetails.classList.add("hidden");
     contactForm.classList.add("hidden");
+    contactMenuClass.add("hidden");
   });
 
   /**
