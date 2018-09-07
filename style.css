@@ -63,6 +63,11 @@ body {
   padding: 0
 }
 
+#contactList>li>a,
+#contactList>li>i {
+  overflow: hidden;
+}
+
 .menu ul>li:hover,
 .menu ul>li.active {
   background-color: white;
