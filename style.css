@@ -1,0 +1,234 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 500px;
+  background-image: url('https://www.dropbox.com/s/w440d09c62179q4/background.jpg?raw=1');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(85, 85, 136, 0.356);
+  padding-bottom: 10px;
+}
+
+.row span>img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: -10px
+}
+
+.row>button {
+  float: right;
+  margin: 10px 20px;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(44, 44, 109);
+  color: white;
+  border-radius: 10px
+}
+
+.row>button:hover {
+  cursor: pointer;
+}
+
+.block {
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  align-items: flex-start
+}
+
+.container {
+  background-color: rgba(218, 109, 58, 0.87);
+  width: 400px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.container .contact-list,
+.menu ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0
+}
+
+.menu ul>li:hover,
+.menu ul>li.active {
+  background-color: white;
+}
+
+.flex-container ul {
+  overflow-y: scroll;
+  max-height: 600px
+}
+
+.flex-container ul>li,
+.menu ul>li {
+  border-bottom: 2px solid rgba(66, 66, 68, 0.651);
+  padding: 10px 10px 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu ul>li {
+  padding-top: 5px !important;
+}
+
+ul>li:hover,
+ul>li.active {
+  border-left: 10px solid rgba(7, 7, 7, 0.363);
+  cursor: pointer;
+  color: rgb(44, 44, 109)
+}
+
+.flex-container ul>li::before {
+  content: url('https://www.dropbox.com/s/ykbs13hrs9e14be/user.png?raw=1');
+  padding: 12px 10px;
+  position: relative;
+  margin-right: 30px;
+  bottom: -10px;
+  border-radius: 50%;
+  background-color: white
+}
+
+i.email {
+  margin-left: 70px
+}
+
+.user-form {
+  max-width: 400px;
+  text-align: center;
+  background-color: rgba(20, 66, 75, 0.548);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.user-form input {
+  width: 350px;
+  margin: 5px;
+  height: 40px;
+  font-size: 20px;
+  border: 0;
+  background-color: inherit;
+  padding: 5px;
+  color: white;
+  overflow-x: hidden;
+}
+
+.user-form input::placeholder {
+  color: white;
+  padding-left: 10px
+}
+
+.user-form input[type='submit'] {
+  margin: 0;
+  border-radius: 10px;
+  background-color: rgba(18, 8, 73, 0.788);
+  font-weight: bold
+}
+
+.user-form input[type='submit']:hover {
+  color: rgba(18, 8, 73, 0.788);
+  background-color: white;
+  cursor: pointer;
+}
+
+.user-form input:focus,
+.user-form input:hover {
+  border-bottom: 4px solid rgba(18, 8, 73, 0.788)
+}
+
+.contact-details {
+  background-color: rgba(25, 117, 192, 0.411);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 10px rgb(25, 117, 192);
+  position: relative;
+  width: 350px;
+}
+
+.contact-details h3 {
+  position: relative;
+  left: 28%;
+  margin-bottom: 15px
+}
+
+.contact-details span>i {
+  margin-right: 10px
+}
+
+.menu,
+.no-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.menu {
+  background-color: rgba(32, 106, 143, 0.932);
+  z-index: 10;
+  width: 400px;
+  height: 90%;
+  padding-top: 70px
+}
+
+.menu h3 {
+  font-weight: bolder;
+  color: rgb(142, 221, 142);
+  padding-left: 30%;
+  border-bottom: 2px solid rgba(66, 66, 68, 0.651);
+  padding-bottom: 10px
+}
+
+.sr {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 50
+}
+
+.sr:hover {
+  opacity: 1
+}
+
+.header-right {
+  float: right;
+  margin-right: 20px
+}
+
+.menu #add::before {
+  content: url('https://www.dropbox.com/s/80702e2bweeqj7i/user-add.png?raw=1');
+  margin: 0 10px
+}
+
+.menu #details::before {
+  content: url('https://www.dropbox.com/s/nisi2zajn83qakl/notes.png?raw=1');
+  margin: 0 10px
+}
+
+.menu #list::before {
+  content: url('https://www.dropbox.com/s/dcbrd4t29bwd3sm/list.png?raw=1');
+  margin: 0 10px;
+}
+
+.hidden {
+  display: none
+}
